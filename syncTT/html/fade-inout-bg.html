@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Fade inout background</title>
+
+    <script src="js/ODDR.js"></script>
+    <script src="js/ORTDP.js"></script>
+
+    <style>
+        .swapper-buffer {
+            width: 100%;
+            height: 100%;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center center;
+        }
+
+        @keyframes fade-in {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes fade-out {
+            from {
+                opacity: 1;
+            }
+            to {
+                opacity: 0;
+            }
+        }
+
+        /* Remove this comment to enable blur
+            .filter{
+                filter:blur(1px);
+            }
+            */
+    </style>
+
+    <script>
+        let _url = new URL(window.location.href);
+        let fadeTime = Number.parseInt(_url.searchParams.get('fadeTime') || "350");//ms
+        let host = _url.searchParams.get('host') || "localhost";
+        let port = _url.searchParams.get('port') || "10800";
+
+        window.onload = async function () {
+            let oddr = new ODDR(host, port);
+            let ortdp = new ORTDP(oddr);
+
+            let bgSwapper = {
+                _buffer: document.querySelectorAll(".swapper-buffer"),
+                _front: 0,
+                _back: 1,
+                _fading: false,
+
+                init: function (fadeTime) {
+                    this.fadeTime = fadeTime;
+
+                    for (let img of this._buffer) {
+                        img.onload = function () {
+                            let src = img.style.backgroundImage;
+                            window.URL.revokeObjectURL(src.substr(5, src.length - 7));
+                        };
+                        img.style.position = "fixed";
+
+                    }
+                },
+
+                setNextSrc: function (src) {
+                    this._buffer[this._back].style.backgroundImage = `url("${src}")`;
+                },
+
+                flush: async function () {
+                    if (this._fading) return;
+
+                    this._fading = true;
+                    let fadeout = this.fadeOut(this._buffer[this._front], this.fadeTime);
+                    let fadein = this.fadeIn(this._buffer[this._back], this.fadeTime);
+                    await fadein;
+                    await fadeout;
+                    this._fading = false;
+
+                    this._swap();
+                },
+
+                _swap: function () {
+                    let t = this._front;
+                    this._front = this._back;
+                    this._back = t;
+                },
+
+                fadeIn: function (img, time) {
+                    img.style.animation = `fade-in ${time / 1000.0}s linear`;
+                    return new Promise(function (ret) {
+                        let cb = function () {
+                            img.style.opacity = 1;
+                            img.removeEventListener("animationend", cb);
+                            ret(true);
+                        };
+
+                        img.addEventListener("animationend", cb);
+                    });
+                },
+
+                fadeOut: function (img, time) {
+                    img.style.animation = `fade-out ${time / 1000.0}s linear`;
+                    return new Promise(function (ret) {
+                        let cb = function () {
+                            img.style.opacity = 0;
+                            img.removeEventListener("animationend", cb);
+                            ret(true);
+                        };
+
+                        img.addEventListener("animationend", cb);
+                    });
+                }
+            };
+
+            bgSwapper.init(fadeTime);
+            debugSwapper = bgSwapper;
+
+            let lastBeatmapInfo = {};
+            async function loop() {
+                let beatmapInfo = await ortdp.getBeatmapInfo();
+                if (beatmapInfo != null && beatmapInfo.beatmapId != -1) {
+                    if (beatmapInfo.backroundFilename != lastBeatmapInfo.backroundFilename &&
+                        !beatmapInfo.equals(lastBeatmapInfo)) {
+
+                        let bgBlob = await ortdp.getBeatmapBackground("blob");
+                        let src = window.URL.createObjectURL(bgBlob);
+                        bgSwapper.setNextSrc(src);
+                        bgSwapper.flush();
+
+                        lastBeatmapInfo = beatmapInfo;
+                    }
+                }
+                setTimeout(loop, 300);
+            }
+
+            loop();
+        }
+    </script>
+</head>
+
+<body>
+    <div class="filter">
+        <div class="img-back swapper-buffer" id="img-0" alt=""></div>
+        <div class="img-fornt swapper-buffer" id="img-1" alt=""></div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,44 @@
+[10:22:54 PM] Loading....
+[10:22:54 PM] Load InternalPlugin ...
+[10:22:54 PM] Beatmap Suggest Command By Dark Projector
+[10:22:54 PM] Load Beatmap Suggest Command ...
+[10:22:54 PM] [BeatmapSuggestPlugin]there is no ApiKey in config.ini,please provide your osu!api_key for using.ApiKey address:https://osu.ppy.sh/p/api
+[10:22:54 PM] Load ConfigGUI ...
+[10:22:54 PM] Load Tray ...
+[10:22:54 PM] Load Default Plug-ins ...
+[10:22:54 PM] Default Plugin by Deliay
+[10:22:54 PM] Load Now Playing ...
+[10:22:54 PM] Now Playing By Deliay, DarkProjector
+[10:22:54 PM] Load OsuRTDataProvider ...
+[10:22:54 PM] OsuRTDataProvider By KedamaOvO
+[10:22:54 PM] MSN类注册成功！
+[10:22:54 PM] Load PP Query ...
+[10:22:54 PM] PP Query Plugin By Deliay >w<
+[10:22:54 PM] Load Recently Message Query Plugin ...
+[10:22:54 PM] Recently Message Query Plugin By Dark Projector
+[10:22:54 PM] Load Ban Manager ...
+[10:22:54 PM] Ban Manager By Dark Projector
+[10:22:54 PM] Load OsuDataDistributeRestful ...
+[10:22:54 PM] OsuDataDistributeRestful By KedamavOvO
+[10:22:54 PM] Loaded 11 Plugins
+[10:22:54 PM] Loaded 2 Sources
+[10:22:54 PM] Loaded 1 Clients
+[10:22:54 PM] Loaded 24 Commands
+[10:22:54 PM] Loaded 12 Filters
+[10:22:54 PM] [ODDR]Not Found RealTimePPDisplayer
+[10:22:54 PM] [ODDR]Not Found OsuLiveStatusPanel
+[10:22:54 PM] Done
+[10:22:54 PM] [ConfigGUI]Enter "config" to open the configuration panel.
+[10:22:54 PM] [OsuRTDataProviderPlugin]Tourney Mode: False
+[10:22:54 PM] Fetch Sync update..
+[10:23:01 PM] [OsuRTDataProviderPlugin]Exception: System.IO.FileNotFoundException: Could not find file 'C:\Users\siwat\AppData\Local\osu!\osu!.siwat.cfg'.
+File name: 'C:\Users\siwat\AppData\Local\osu!\osu!.siwat.cfg'
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share)
+   at OsuRTDataProvider.Listen.OsuListenerManager.FindSongPathAndUsername()
+[10:23:01 PM] [OsuRTDataProviderPlugin]Search failed, use default songs path.
+[10:23:01 PM] [OsuRTDataProviderPlugin]Osu Path: C:\Users\siwat\AppData\Local\osu!
+[10:23:01 PM] [OsuRTDataProviderPlugin]Beatmap Path: C:\Users\siwat\AppData\Local\osu!\Songs
+[10:23:01 PM] [OsuRTDataProviderPlugin][OsuRTDataProvider][ID:0]Found osu!.exe process
+[10:23:01 PM] [OsuRTDataProviderPlugin][OsuRTDataProvider][ID:0]Init StatusFinder Success!

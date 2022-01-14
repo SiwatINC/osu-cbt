@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8" />
+    <title>Displayer</title>
+    <script type="text/javascript" src="./js/lib/NoSleep.min.js"></script>
+	<script type="text/javascript" src="js/ODDR.js"></script>
+	<script type="text/javascript" src="js/rtppd/RTPPD.js"></script>
+	<script type="text/javascript" src="js/ORTDP.js"></script>
+	<script type="text/javascript" src="js/Smoother.js"></script>
+	<script type="text/javascript" src="js/rtppd/Formatter.js"></script>
+	<style type="text/css">
+		body {
+			background-color: #66CCFF;
+		}
+
+		.text {
+			color: #FFFFFF;
+			text-align: center;
+			font-size: 48px;
+			text-shadow: 2px 2px 2px #000000;
+			font-family: sans-serif;
+		}
+
+		.text-hit-count {
+			font-size: 24px;
+		}
+	</style>
+</head>
+
+<body>
+	<pre id="pp-lable" class="text">0.00pp</pre>
+	<pre id="hit-count-lable" class="text text-hit-count">0x100 0x50 0xMiss</pre>
+
+	<script>
+		(async function () {
+			let html_hit_count = document.querySelector("#hit-count-lable");
+			let html_pp = document.querySelector("#pp-lable");
+
+			const _url = new URL(window.location.href);
+
+			/// Args
+			const HOST = _url.searchParams.get('host') || "localhost";
+			const PORT = _url.searchParams.get('port') || "10800";
+			const DIGITS = Number.parseInt(_url.searchParams.get('digits') || "2");
+			const FPS = Number.parseInt(_url.searchParams.get('fps') || "30");
+			const GET_INTERVAL = Number.parseInt(_url.searchParams.get('interval') || "200");
+			const PP_FORMAT = _url.searchParams.get('pp_format');
+            const HIT_COUNT_FORMAT = _url.searchParams.get('hit_format');
+
+			const st = 0.2;
+			const dt = 1.0 / FPS;
+			const render_interval = dt * 1000;
+
+			let current_pp = null;
+			let target_pp = null;
+
+			let hit_count = null;
+			let beatmapTuple = null;
+
+			let smoothers = {};
+			let pp_formatter = null;
+			let hit_count_formatter = null;
+			let status = 0;
+
+			//initialize ODDR and RTPPD
+			let oddr = new ODDR(HOST, PORT);
+			let rtppd = new RTPPD(oddr);
+			let ortdp = new ORTDP(oddr);
+
+            const mobilePlatforms = ["Android","IPhone","IPad"];
+            if (mobilePlatforms.map(p=>navigator.userAgent.indexOf(p)).filter(i=>i!=-1).length>0)
+            {
+                alert("Click on the screen to enable wake lock.")
+                document.addEventListener('click', function enableNoSleep() {
+                    document.removeEventListener('click', enableNoSleep, false);
+                    new NoSleep().enable();
+                    alert("Enabled wake lock.");
+                }, false);
+            }
+
+            if(PP_FORMAT == null){
+			//get pp format and hit count format
+                rtppd.getPerformancePointFormatString().then(function (format_json) {
+                    pp_formatter = new Formatter(format_json.format,DIGITS);
+                });
+            }else{
+                pp_formatter = new Formatter(PP_FORMAT.replace(/\\n/g,'\n'),DIGITS);
+            }
+
+            if(HIT_COUNT_FORMAT == null){
+                rtppd.getHitCountFormatString().then(function (format_json) {
+                    hit_count_formatter = new Formatter(format_json.format,0);
+                });
+            }else{
+                hit_count_formatter = new Formatter(HIT_COUNT_FORMAT.replace(/\\n/g,'\n'),0);
+            }
+
+			//smooth function
+			function SmoothObject(previous, target) {
+				for (let prop in target) {
+					if (smoothers[prop] === undefined)
+						smoothers[prop] = new Smoother(st, dt);
+					previous[prop] = smoothers[prop].SmoothDamp(previous[prop], target[prop]);
+				}
+				return previous;
+			}
+
+			//get pp and hit count data
+			async function get_data() {
+				target_pp = await rtppd.getPerformancePointAt(0);
+				if (current_pp === null)
+					current_pp = target_pp;
+
+				hit_count = await rtppd.getHitCountAt(0);
+				beatmapTuple = await rtppd.getBeatmapTupleAt(0);
+				beatmapTuple.time = (await ortdp.getPlayingTime()).time;
+				status = (await ortdp.getGameStatusAt()).status;
+
+				if (status == ortdp.STATUS_PLAYING) {
+					let tuple = Object.assign(current_pp, hit_count);
+					tuple = Object.assign(tuple, beatmapTuple);
+
+					if (hit_count !== null)
+						if (hit_count_formatter != null)
+							html_hit_count.textContent = hit_count_formatter.Format(tuple);
+				}
+
+				setTimeout(get_data, GET_INTERVAL);
+			}
+
+			//display function
+			async function display_content() {
+				if (status == ortdp.STATUS_PLAYING) {
+					let tuple = Object.assign(current_pp, hit_count);
+					tuple = Object.assign(tuple, beatmapTuple);
+
+					if (current_pp !== null) {
+						current_pp = SmoothObject(current_pp, target_pp);
+						if (pp_formatter != null)
+							html_pp.textContent = pp_formatter.Format(tuple);
+					}
+				}
+
+				if(status != ortdp.STATUS_RANK && status != ortdp.STATUS_PLAYING){
+					html_pp.textContent = "";
+					html_hit_count.textContent = "";
+					if(pp_formatter!=null)
+						pp_formatter.resetVariables();
+					if(hit_count_formatter!=null)
+						hit_count_formatter.resetVariables();
+				}
+				setTimeout(display_content, render_interval);
+			}
+
+			get_data();
+			display_content();
+		})();
+	</script>
+</body>
+
+</html>

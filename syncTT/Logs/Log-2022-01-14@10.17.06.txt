@@ -1,0 +1,63 @@
+[10:17:06 PM] Loading....
+[10:17:06 PM] Load InternalPlugin ...
+[10:17:06 PM] Beatmap Suggest Command By Dark Projector
+[10:17:06 PM] Load Beatmap Suggest Command ...
+[10:17:06 PM] [BeatmapSuggestPlugin]there is no ApiKey in config.ini,please provide your osu!api_key for using.ApiKey address:https://osu.ppy.sh/p/api
+[10:17:06 PM] Load ConfigGUI ...
+[10:17:06 PM] Load Tray ...
+[10:17:06 PM] Load Default Plug-ins ...
+[10:17:06 PM] Default Plugin by Deliay
+[10:17:06 PM] Load Now Playing ...
+[10:17:06 PM] Now Playing By Deliay, DarkProjector
+[10:17:06 PM] MSN类注册成功！
+[10:17:31 PM] OsuDataDistributeRestfulPlugin not a standard plugin (The underlying connection was closed: An unexpected error occurred on a receive.)
+[10:17:31 PM]    at System.Net.WebClient.OpenRead(Uri address)
+   at System.Net.WebClient.OpenRead(String address)
+   at Sync.Tools.Builtin.PluginCommand.Serializer[T](String url)
+   at Sync.Tools.Builtin.PluginCommand.InstallByKeyword(String keyword, Boolean requireRestart)
+   at Sync.Plugins.PluginManager.CheckUnknownDependency(String name)
+   at Sync.Plugins.PluginManager.layerLoader(IList`1 asmList)
+[10:17:31 PM] Load OsuRTDataProvider ...
+[10:17:31 PM] OsuRTDataProvider By KedamaOvO
+[10:17:31 PM] Load PP Query ...
+[10:17:31 PM] PP Query Plugin By Deliay >w<
+[10:17:31 PM] Load Recently Message Query Plugin ...
+[10:17:31 PM] Recently Message Query Plugin By Dark Projector
+[10:17:31 PM] Load Ban Manager ...
+[10:17:31 PM] Ban Manager By Dark Projector
+[10:17:31 PM] Loaded 10 Plugins
+[10:17:31 PM] Loaded 2 Sources
+[10:17:31 PM] Loaded 1 Clients
+[10:17:31 PM] Loaded 24 Commands
+[10:17:31 PM] Loaded 12 Filters
+[10:17:31 PM] Done
+[10:17:31 PM] [ConfigGUI]Enter "config" to open the configuration panel.
+[10:17:31 PM] [OsuRTDataProviderPlugin]Tourney Mode: False
+[10:17:31 PM] Fetch Sync update..
+[10:17:31 PM] [BeatmapSuggestPlugin]there is no ApiKey in config.ini,please provide your osu!api_key for using.ApiKey address:https://osu.ppy.sh/p/api
+[10:17:38 PM] [OsuRTDataProviderPlugin]Exception: System.IO.FileNotFoundException: Could not find file 'C:\Users\siwat\AppData\Local\osu!\osu!.siwat.cfg'.
+File name: 'C:\Users\siwat\AppData\Local\osu!\osu!.siwat.cfg'
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share)
+   at OsuRTDataProvider.Listen.OsuListenerManager.FindSongPathAndUsername()
+[10:17:38 PM] [OsuRTDataProviderPlugin]Search failed, use default songs path.
+[10:17:38 PM] [OsuRTDataProviderPlugin]Osu Path: C:\Users\siwat\AppData\Local\osu!
+[10:17:38 PM] [OsuRTDataProviderPlugin]Beatmap Path: C:\Users\siwat\AppData\Local\osu!\Songs
+[10:17:38 PM] [OsuRTDataProviderPlugin][ID:0]Found osu!.exe process
+[10:17:38 PM] [OsuRTDataProviderPlugin][ID:0]Init StatusFinder Success!
+[10:18:09 PM] Fetch Sync update info failed,please check your network if it can able to connect http://sync.mcbaka.com/
+[10:18:09 PM] osu!Live Sync ver 2.18.5.0
+[10:18:09 PM] Type 'help' command for help
+[10:18:15 PM] Help for 'plugins' command:
+NameInternalPlugin           AuthorOsuSync             Support Update:No
+NameBeatmap Suggest Command  AuthorDark Projector      Support Update:Yes            Ver:2.15.0         
+NameConfigGUI                AuthorKedamaOvO           Support Update:Yes            Ver:0.2.2          
+NameTray                     AuthorKedamaOvO           Support Update:No
+NameDefault Plug-ins         AuthorDeliay              Support Update:Yes            Ver:2.16.2         
+NameNow Playing              AuthorDeliay, DarkProjectorSupport Update:Yes            Ver:2.16.0         
+NameOsuRTDataProvider        AuthorKedamaOvO           Support Update:Yes            Ver:1.6.8          
+NamePP Query                 AuthorDeliay              Support Update:Yes            Ver:2.16.0         
+NameRecently Message Query PluginAuthorDark Projector      Support Update:Yes            Ver:2.16.0         
+NameBan Manager              AuthorDark Projector      Support Update:Yes            Ver:2.16.0         
+[10:19:28 PM] Exiting...
