@@ -1,0 +1,40 @@
+[11:56:00 PM] Loading....
+[11:56:00 PM] Load InternalPlugin ...
+[11:56:00 PM] Load ConfigGUI ...
+[11:56:00 PM] Load Tray ...
+[11:56:00 PM] Load Default Plug-ins ...
+[11:56:00 PM] Default Plugin by Deliay
+[11:56:00 PM] Load Now Playing ...
+[11:56:00 PM] Now Playing By Deliay, DarkProjector
+[11:56:00 PM] MSN类注册成功！
+[11:56:00 PM] Load OsuRTDataProvider ...
+[11:56:00 PM] OsuRTDataProvider By KedamaOvO
+[11:56:00 PM] Load PP Query ...
+[11:56:00 PM] PP Query Plugin By Deliay >w<
+[11:56:00 PM] Load RealTimePPDisplayer ...
+[11:56:00 PM] RealTimePPDisplayer By KedamaOvO Ver.1.8.7
+[11:56:00 PM] Load Recently Message Query Plugin ...
+[11:56:00 PM] Recently Message Query Plugin By Dark Projector
+[11:56:00 PM] Load OsuDataDistributeRestful ...
+[11:56:00 PM] OsuDataDistributeRestful By KedamavOvO
+[11:56:00 PM] Loaded 10 Plugins
+[11:56:00 PM] Loaded 2 Sources
+[11:56:00 PM] Loaded 1 Clients
+[11:56:00 PM] Loaded 25 Commands
+[11:56:00 PM] Loaded 8 Filters
+[11:56:00 PM] [ODDR]Not Found OsuLiveStatusPanel
+[11:56:00 PM] Done
+[11:56:00 PM] [ConfigGUI]Enter "config" to open the configuration panel.
+[11:56:00 PM] [OsuRTDataProviderPlugin]Tourney Mode: False
+[11:56:01 PM] Fetch Sync update..
+[11:56:08 PM] [OsuRTDataProviderPlugin][ID:0]Cannot find osu!.exe process
+[11:56:13 PM] [OsuRTDataProviderPlugin][ID:0]Cannot find osu!.exe process
+[11:56:19 PM] [OsuRTDataProviderPlugin][ID:0]Cannot find osu!.exe process
+[11:56:24 PM] [OsuRTDataProviderPlugin][ID:0]Cannot find osu!.exe process
+[11:56:26 PM] Fetch Sync update info failed,please check your network if it can able to connect http://sync.mcbaka.com/
+[11:56:26 PM] osu!Live Sync ver 2.18.4.0
+[11:56:26 PM] Type 'help' command for help
+[11:56:30 PM] [OsuRTDataProviderPlugin][ID:0]Cannot find osu!.exe process
+[11:56:36 PM] [OsuRTDataProviderPlugin][ID:0]Cannot find osu!.exe process
+[11:56:41 PM] [OsuRTDataProviderPlugin][ID:0]Cannot find osu!.exe process
+[11:56:47 PM] [OsuRTDataProviderPlugin][ID:0]Cannot find osu!.exe process

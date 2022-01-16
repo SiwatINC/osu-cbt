@@ -1,0 +1,33 @@
+from tkinter import *
+from threading import Thread
+import osucbt
+class gui:
+    
+    def __init__(self):
+        root = Tk()
+        self.root = root
+        self.charges = IntVar()
+        self.label_text = StringVar()
+        root.geometry("400x100")
+        frame = Frame(root)
+        self.frame = frame
+        frame.pack()
+
+        self.label_text.set("Initializing . . .")
+        label = Label(frame,textvariable=self.label_text)
+        self.label = label
+        label.pack()
+
+        slider = Scale(frame, from_=0, to=10, orient=HORIZONTAL, label="Charges", variable=self.charges)
+        self.slider = slider
+        slider.pack(padx=5, pady=5)
+
+        self.root.title("osu!cbt client by Siwat Sirichai")
+
+        self.root.after(100, self.loop)
+        self.root.mainloop()
+        
+        exit()
+    def loop(self):
+        self.charges.set(osucbt.charge)
+        self.root.after(100,self.loop)

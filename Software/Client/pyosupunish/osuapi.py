@@ -2,6 +2,7 @@ import json, requests, config, logging
 class osuapi:
     logger = logging.getLogger('osuapi')
     def __init__(self):
+        self.logger.setLevel(config.OSU_API_LOGGING_LEVEL)
         data = self.fetchAPI()
         if data != None:
             data = data['list'][0]
