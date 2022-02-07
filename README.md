@@ -1,2 +1,2 @@
-# osu!cbt
-meet osu!cbt, a sequel to osu!tazer 
+# osu!pneumatic
+meet osu!pneumatic, a sequel to osu!tazer 
