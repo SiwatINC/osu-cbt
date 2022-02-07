@@ -8,8 +8,16 @@ class cbt:
     logger = logging.getLogger('cbt')
     mcu = None
     debounce_timer = 0
+    def blinkPCLED(self):
+        while(True):
+            self.logger.debug("LEDLoop")
+            self.mcu.digital_pin_write(pin=config.LED_PIN,value=1)
+            sleep(0.5)
+            self.mcu.digital_pin_write(pin=config.LED_PIN,value=0)
+            sleep(0.5)
     def activateInternal(self):
         self.logger.warn("your balls are crushed")
+        self.debounce_timer = perf_counter()+config.SUSTAIN_TIME
         self.extend()
         sleep(config.SUSTAIN_TIME)
         self.retract()
@@ -18,22 +26,29 @@ class cbt:
         self.mcu.set_pin_mode_digital_output(pin_number=config.FRONT_VALVE_PIN)
         self.mcu.set_pin_mode_digital_output(pin_number=config.REAR_VALVE_PIN)
         self.mcu.set_pin_mode_digital_output(pin_number=config.LED_PIN)
-        self.mcu.digital_pin_write(pin=config.LED_PIN,value=1)
+        LEDThread = Thread(target=self.blinkPCLED)
+        LEDThread.start()
         self.mcu.set_pin_mode_digital_input_pullup(pin_number=config.RETRACT_BUTTON_PIN,callback=self.handle_retract_button)
         self.mcu.set_pin_mode_digital_input_pullup(pin_number=config.EXTEND_BUTTON_PIN,callback=self.handle_extend_button)
         self.mcu.set_pin_mode_digital_input_pullup(pin_number=config.TEST_BUTTON_PIN,callback=self.handle_test_button)
-        
         self.logger.setLevel(config.CBT_LOGGING_LEVEL)
+        self.retract()
     def handle_retract_button(self, data):
-        if (perf_counter()-self.debounce_timer >= 0.5) and data[2] == 0: #data at index 2 is the pin value.
+        
+        if (perf_counter()-self.debounce_timer >= config.DEBOUNCE_TIME) and data[2] == 0: #data at index 2 is the pin value.
+            self.logger.info("RetractButtonPressed")
             self.retract()
             self.debounce_timer = perf_counter()
     def handle_extend_button(self, data):
-        if (perf_counter()-self.debounce_timer >= 0.5) and data[2] == 0: #data at index 2 is the pin value.
+        
+        if (perf_counter()-self.debounce_timer >= config.DEBOUNCE_TIME) and data[2] == 0: #data at index 2 is the pin value.
+            self.logger.info("ExtendButtonPressed")
             self.extend()
             self.debounce_timer = perf_counter()
     def handle_test_button(self, data):
-        if (perf_counter()-self.debounce_timer >= 0.5) and data[2] == 0: #data at index 2 is the pin value.
+        
+        if (perf_counter()-self.debounce_timer >= config.DEBOUNCE_TIME) and data[2] == 0: #data at index 2 is the pin value.
+            self.logger.info("TestButtonPressed")
             self.activate()
             self.debounce_timer = perf_counter()
     def extend(self):

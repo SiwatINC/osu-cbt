@@ -1,0 +1,45 @@
+[4:14:02 PM] Loading....
+[4:14:02 PM] Load InternalPlugin ...
+[4:14:02 PM] Load ConfigGUI ...
+[4:14:02 PM] Load Tray ...
+[4:14:02 PM] Load Default Plug-ins ...
+[4:14:02 PM] Default Plugin by Deliay
+[4:14:02 PM] Load Now Playing ...
+[4:14:02 PM] Now Playing By Deliay, DarkProjector
+[4:14:02 PM] Load OsuRTDataProvider ...
+[4:14:02 PM] OsuRTDataProvider By KedamaOvO
+[4:14:02 PM] MSN类注册成功！
+[4:14:02 PM] Load PP Query ...
+[4:14:02 PM] PP Query Plugin By Deliay >w<
+[4:14:02 PM] Load RealTimePPDisplayer ...
+[4:14:02 PM] RealTimePPDisplayer By KedamaOvO Ver.1.8.7
+[4:14:02 PM] Load Recently Message Query Plugin ...
+[4:14:02 PM] Recently Message Query Plugin By Dark Projector
+[4:14:02 PM] Load OsuDataDistributeRestful ...
+[4:14:02 PM] OsuDataDistributeRestful By KedamavOvO
+[4:14:02 PM] Loaded 10 Plugins
+[4:14:02 PM] Loaded 2 Sources
+[4:14:02 PM] Loaded 1 Clients
+[4:14:02 PM] Loaded 25 Commands
+[4:14:02 PM] Loaded 8 Filters
+[4:14:02 PM] [ODDR]Not Found OsuLiveStatusPanel
+[4:14:02 PM] Done
+[4:14:02 PM] [ConfigGUI]Enter "config" to open the configuration panel.
+[4:14:02 PM] [OsuRTDataProviderPlugin]Tourney Mode: False
+[4:14:03 PM] Fetch Sync update..
+[4:14:09 PM] [OsuRTDataProviderPlugin][ID:0]Cannot find osu!.exe process
+[4:14:15 PM] [OsuRTDataProviderPlugin][ID:0]Cannot find osu!.exe process
+[4:14:21 PM] [OsuRTDataProviderPlugin][ID:0]Cannot find osu!.exe process
+[4:14:26 PM] [OsuRTDataProviderPlugin][ID:0]Cannot find osu!.exe process
+[4:14:32 PM] [OsuRTDataProviderPlugin][ID:0]Cannot find osu!.exe process
+[4:14:37 PM] [OsuRTDataProviderPlugin][ID:0]Cannot find osu!.exe process
+[4:14:41 PM] Fetch Sync update info failed,please check your network if it can able to connect http://sync.mcbaka.com/
+[4:14:41 PM] osu!Live Sync ver 2.18.4.0
+[4:14:41 PM] Type 'help' command for help
+[4:14:43 PM] [OsuRTDataProviderPlugin][ID:0]Cannot find osu!.exe process
+[4:14:49 PM] [OsuRTDataProviderPlugin][ID:0]Cannot find osu!.exe process
+[4:14:54 PM] [OsuRTDataProviderPlugin][ID:0]Cannot find osu!.exe process
+[4:15:00 PM] [OsuRTDataProviderPlugin][ID:0]Cannot find osu!.exe process
+[4:15:05 PM] [OsuRTDataProviderPlugin][ID:0]Cannot find osu!.exe process
+[4:15:11 PM] [OsuRTDataProviderPlugin][ID:0]Cannot find osu!.exe process
+[4:15:17 PM] [OsuRTDataProviderPlugin][ID:0]Cannot find osu!.exe process
