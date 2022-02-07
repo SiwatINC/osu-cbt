@@ -1,0 +1,46 @@
+[11:23:22 PM] Loading....
+[11:23:22 PM] Load InternalPlugin ...
+[11:23:22 PM] Load ConfigGUI ...
+[11:23:22 PM] Load Tray ...
+[11:23:22 PM] Load Default Plug-ins ...
+[11:23:22 PM] Default Plugin by Deliay
+[11:23:22 PM] Load Now Playing ...
+[11:23:22 PM] Now Playing By Deliay, DarkProjector
+[11:23:22 PM] Load OsuRTDataProvider ...
+[11:23:22 PM] OsuRTDataProvider By KedamaOvO
+[11:23:22 PM] MSN类注册成功！
+[11:23:22 PM] Load PP Query ...
+[11:23:22 PM] PP Query Plugin By Deliay >w<
+[11:23:22 PM] Load RealTimePPDisplayer ...
+[11:23:22 PM] RealTimePPDisplayer By KedamaOvO Ver.1.8.7
+[11:23:22 PM] Load Recently Message Query Plugin ...
+[11:23:22 PM] Recently Message Query Plugin By Dark Projector
+[11:23:22 PM] Load OsuDataDistributeRestful ...
+[11:23:22 PM] OsuDataDistributeRestful By KedamavOvO
+[11:23:22 PM] Loaded 10 Plugins
+[11:23:22 PM] Loaded 2 Sources
+[11:23:22 PM] Loaded 1 Clients
+[11:23:22 PM] Loaded 25 Commands
+[11:23:22 PM] Loaded 8 Filters
+[11:23:22 PM] [ODDR]Not Found OsuLiveStatusPanel
+[11:23:22 PM] Done
+[11:23:22 PM] [ConfigGUI]Enter "config" to open the configuration panel.
+[11:23:22 PM] [OsuRTDataProviderPlugin]Tourney Mode: False
+[11:23:23 PM] Fetch Sync update..
+[11:23:30 PM] [OsuRTDataProviderPlugin]ForceOsuSongsDirectory: 
+[11:23:30 PM] [OsuRTDataProviderPlugin]The ForceOsuSongsDirectory does not exist, try searching for the songs path.
+[11:23:30 PM] [OsuRTDataProviderPlugin]OSU Client Verison:b20220126 ORTDP Version:1.6.8
+[11:23:30 PM] [OsuRTDataProviderPlugin]Osu Path: C:\Users\siwat\AppData\Local\osu!
+[11:23:30 PM] [OsuRTDataProviderPlugin]Beatmap Path: C:\Users\siwat\AppData\Local\osu!\Songs
+[11:23:30 PM] [OsuRTDataProviderPlugin][ID:0]Found osu!.exe process
+[11:23:30 PM] [OsuRTDataProviderPlugin][ID:0]Init StatusFinder Success!
+[11:23:30 PM] [OsuRTDataProviderPlugin]osu!version compatible condition: 20220126 < 20190816 ?
+[11:23:30 PM] [OsuRTDataProviderPlugin]BeatmapFileNameAddressOffset += 4 for osu!ver >= 20211014
+[11:23:30 PM] [OsuRTDataProviderPlugin][ID:0]Init BeatmapFinder Success!
+[11:23:35 PM] [OsuRTDataProviderPlugin][ID:0]Init PlayFinder Success!
+[11:23:35 PM] [OsuRTDataProviderPlugin][ID:0]Init ModeFinder Success!
+[11:23:35 PM] [OsuRTDataProviderPlugin][ID:0]Init HitEventFinder Success!
+[11:23:48 PM] Fetch Sync update info failed,please check your network if it can able to connect http://sync.mcbaka.com/
+[11:23:48 PM] osu!Live Sync ver 2.18.4.0
+[11:23:48 PM] Type 'help' command for help
+[11:27:29 PM] [RTPPD]Shibuya Kanon (CV: Date Sayuri), Tang Keke (CV: Liyuu) - Tiny Stars[Hoshizora Rin's Hoshi] +NF | 0.00% => 0.00pp (Osu)
