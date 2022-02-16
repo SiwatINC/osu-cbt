@@ -17,7 +17,7 @@ class cbt:
             sleep(0.5)
     def activateInternal(self):
         self.logger.warn("your balls are crushed")
-        self.debounce_timer = perf_counter()+config.SUSTAIN_TIME
+        self.debounce_timer = perf_counter()+config.SUSTAIN_TIME+config.EXTEND_TIME
         self.extend()
         sleep(config.SUSTAIN_TIME)
         self.retract()
@@ -56,12 +56,17 @@ class cbt:
         mcu=self.mcu
         mcu.digital_write(config.FRONT_VALVE_PIN,0) # Drain Front Chamber
         mcu.digital_write(config.REAR_VALVE_PIN,1) # Pressureize Rear Chamber
+        sleep(config.EXTEND_TIME)
+        mcu.digital_write(config.REAR_VALVE_PIN,0) # Drain Rear Chamber 
     def retract(self):
         mcu=self.mcu
         self.logger.debug("Retracting")
         mcu.digital_write(config.REAR_VALVE_PIN,0) # Drain Rear Chamber
         mcu.digital_write(config.FRONT_VALVE_PIN,1) # Pressureize Front Chamber
+        
     def activate(self):
         self.logger.debug("Activating cbt routine.")
         routineThread = Thread(target=self.activateInternal)
         routineThread.start()
+
+        

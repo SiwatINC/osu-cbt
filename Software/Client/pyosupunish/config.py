@@ -16,7 +16,8 @@ TRIGGER_VALUE = 10  # How many accumulated charges until activation
 DECAY_INTERVAL = 5  # How many seconds pass until charges drop by 1
 
 # device configurations
-SUSTAIN_TIME = 0.4 #Extension Duration
+EXTEND_TIME = 0.15 #Extension Duration
+SUSTAIN_TIME = 0.4 #Sustain Duration
 FRONT_VALVE_PIN = 50 #Arduino Pin for Front Valve
 REAR_VALVE_PIN = 51 #Arduino Pin for Rear Valve
 RETRACT_BUTTON_PIN = 49
