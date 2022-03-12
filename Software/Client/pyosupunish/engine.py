@@ -6,3 +6,4 @@ device = cbt()
 while(True):
     device.activate()
     sleep(0.9)
+6

@@ -1,0 +1,45 @@
+[2:56:31 PM] Loading....
+[2:56:31 PM] Load InternalPlugin ...
+[2:56:31 PM] Load ConfigGUI ...
+[2:56:31 PM] Load Tray ...
+[2:56:31 PM] Load Default Plug-ins ...
+[2:56:31 PM] Default Plugin by Deliay
+[2:56:31 PM] Load Now Playing ...
+[2:56:31 PM] Now Playing By Deliay, DarkProjector
+[2:56:31 PM] Load OsuRTDataProvider ...
+[2:56:31 PM] OsuRTDataProvider By KedamaOvO
+[2:56:31 PM] MSN类注册成功！
+[2:56:31 PM] Load PP Query ...
+[2:56:31 PM] PP Query Plugin By Deliay >w<
+[2:56:31 PM] Load RealTimePPDisplayer ...
+[2:56:31 PM] RealTimePPDisplayer By KedamaOvO Ver.1.8.7
+[2:56:31 PM] Load Recently Message Query Plugin ...
+[2:56:31 PM] Recently Message Query Plugin By Dark Projector
+[2:56:31 PM] Load OsuDataDistributeRestful ...
+[2:56:31 PM] OsuDataDistributeRestful By KedamavOvO
+[2:56:31 PM] Loaded 10 Plugins
+[2:56:31 PM] Loaded 2 Sources
+[2:56:31 PM] Loaded 1 Clients
+[2:56:31 PM] Loaded 25 Commands
+[2:56:31 PM] Loaded 8 Filters
+[2:56:31 PM] [ODDR]Not Found OsuLiveStatusPanel
+[2:56:31 PM] Done
+[2:56:31 PM] [ConfigGUI]Enter "config" to open the configuration panel.
+[2:56:31 PM] [OsuRTDataProviderPlugin]Tourney Mode: False
+[2:56:32 PM] Fetch Sync update..
+[2:56:39 PM] [OsuRTDataProviderPlugin]ForceOsuSongsDirectory: 
+[2:56:39 PM] [OsuRTDataProviderPlugin]The ForceOsuSongsDirectory does not exist, try searching for the songs path.
+[2:56:39 PM] [OsuRTDataProviderPlugin]OSU Client Verison:b20220213 ORTDP Version:1.6.8
+[2:56:39 PM] [OsuRTDataProviderPlugin]Osu Path: C:\Users\siwat\AppData\Local\osu!
+[2:56:39 PM] [OsuRTDataProviderPlugin]Beatmap Path: C:\Users\siwat\AppData\Local\osu!\Songs
+[2:56:39 PM] [OsuRTDataProviderPlugin][ID:0]Found osu!.exe process
+[2:56:39 PM] [OsuRTDataProviderPlugin][ID:0]Init StatusFinder Success!
+[2:56:39 PM] [OsuRTDataProviderPlugin][ID:0]Init PlayFinder Success!
+[2:56:39 PM] [OsuRTDataProviderPlugin][ID:0]Init ModeFinder Success!
+[2:56:39 PM] [OsuRTDataProviderPlugin][ID:0]Init HitEventFinder Success!
+[2:56:39 PM] [OsuRTDataProviderPlugin]osu!version compatible condition: 20220213 < 20190816 ?
+[2:56:39 PM] [OsuRTDataProviderPlugin]BeatmapFileNameAddressOffset += 4 for osu!ver >= 20211014
+[2:56:39 PM] [OsuRTDataProviderPlugin][ID:0]Init BeatmapFinder Success!
+[2:56:57 PM] Fetch Sync update info failed,please check your network if it can able to connect http://sync.mcbaka.com/
+[2:56:57 PM] osu!Live Sync ver 2.18.4.0
+[2:56:57 PM] Type 'help' command for help

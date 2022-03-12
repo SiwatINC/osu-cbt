@@ -1,0 +1,106 @@
+[2:44:25 PM] Loading....
+[2:44:25 PM] Load InternalPlugin ...
+[2:44:25 PM] Load ConfigGUI ...
+[2:44:25 PM] Load Tray ...
+[2:44:25 PM] Load Default Plug-ins ...
+[2:44:25 PM] Default Plugin by Deliay
+[2:44:25 PM] Load Now Playing ...
+[2:44:25 PM] Now Playing By Deliay, DarkProjector
+[2:44:25 PM] Load OsuRTDataProvider ...
+[2:44:25 PM] OsuRTDataProvider By KedamaOvO
+[2:44:25 PM] MSN类注册成功！
+[2:44:25 PM] Load PP Query ...
+[2:44:25 PM] PP Query Plugin By Deliay >w<
+[2:44:25 PM] Load RealTimePPDisplayer ...
+[2:44:25 PM] RealTimePPDisplayer By KedamaOvO Ver.1.8.7
+[2:44:25 PM] Load Recently Message Query Plugin ...
+[2:44:25 PM] Recently Message Query Plugin By Dark Projector
+[2:44:25 PM] Load OsuDataDistributeRestful ...
+[2:44:25 PM] OsuDataDistributeRestful By KedamavOvO
+[2:44:25 PM] Loaded 10 Plugins
+[2:44:25 PM] Loaded 2 Sources
+[2:44:25 PM] Loaded 1 Clients
+[2:44:25 PM] Loaded 25 Commands
+[2:44:25 PM] Loaded 8 Filters
+[2:44:25 PM] [ODDR]Not Found OsuLiveStatusPanel
+[2:44:25 PM] Done
+[2:44:25 PM] [ConfigGUI]Enter "config" to open the configuration panel.
+[2:44:25 PM] [OsuRTDataProviderPlugin]Tourney Mode: False
+[2:44:26 PM] Fetch Sync update..
+[2:44:33 PM] [OsuRTDataProviderPlugin][ID:0]Cannot find osu!.exe process
+[2:44:39 PM] [OsuRTDataProviderPlugin][ID:0]Cannot find osu!.exe process
+[2:44:44 PM] [OsuRTDataProviderPlugin][ID:0]Cannot find osu!.exe process
+[2:44:50 PM] [OsuRTDataProviderPlugin][ID:0]Cannot find osu!.exe process
+[2:44:51 PM] Fetch Sync update info failed,please check your network if it can able to connect http://sync.mcbaka.com/
+[2:44:51 PM] osu!Live Sync ver 2.18.4.0
+[2:44:51 PM] Type 'help' command for help
+[2:44:56 PM] [OsuRTDataProviderPlugin][ID:0]Cannot find osu!.exe process
+[2:45:01 PM] [OsuRTDataProviderPlugin][ID:0]Cannot find osu!.exe process
+[2:45:07 PM] [OsuRTDataProviderPlugin][ID:0]Cannot find osu!.exe process
+[2:45:12 PM] [OsuRTDataProviderPlugin][ID:0]Cannot find osu!.exe process
+[2:45:18 PM] [OsuRTDataProviderPlugin][ID:0]Cannot find osu!.exe process
+[2:45:24 PM] [OsuRTDataProviderPlugin][ID:0]Cannot find osu!.exe process
+[2:45:29 PM] [OsuRTDataProviderPlugin][ID:0]Cannot find osu!.exe process
+[2:45:35 PM] [OsuRTDataProviderPlugin][ID:0]Cannot find osu!.exe process
+[2:45:41 PM] [OsuRTDataProviderPlugin][ID:0]Cannot find osu!.exe process
+[2:45:46 PM] [OsuRTDataProviderPlugin][ID:0]Cannot find osu!.exe process
+[2:45:52 PM] [OsuRTDataProviderPlugin][ID:0]Cannot find osu!.exe process
+[2:45:57 PM] [OsuRTDataProviderPlugin][ID:0]Cannot find osu!.exe process
+[2:46:03 PM] [OsuRTDataProviderPlugin][ID:0]Cannot find osu!.exe process
+[2:46:09 PM] [OsuRTDataProviderPlugin][ID:0]Cannot find osu!.exe process
+[2:46:14 PM] [OsuRTDataProviderPlugin][ID:0]Cannot find osu!.exe process
+[2:46:20 PM] [OsuRTDataProviderPlugin][ID:0]Cannot find osu!.exe process
+[2:46:25 PM] [OsuRTDataProviderPlugin][ID:0]Cannot find osu!.exe process
+[2:46:31 PM] [OsuRTDataProviderPlugin][ID:0]Cannot find osu!.exe process
+[2:46:37 PM] [OsuRTDataProviderPlugin][ID:0]Cannot find osu!.exe process
+[2:46:42 PM] [OsuRTDataProviderPlugin][ID:0]Cannot find osu!.exe process
+[2:46:48 PM] [OsuRTDataProviderPlugin][ID:0]Cannot find osu!.exe process
+[2:46:54 PM] [OsuRTDataProviderPlugin][ID:0]Cannot find osu!.exe process
+[2:46:59 PM] [OsuRTDataProviderPlugin][ID:0]Cannot find osu!.exe process
+[2:47:05 PM] [OsuRTDataProviderPlugin][ID:0]Cannot find osu!.exe process
+[2:47:10 PM] [OsuRTDataProviderPlugin][ID:0]Cannot find osu!.exe process
+[2:47:16 PM] [OsuRTDataProviderPlugin][ID:0]Cannot find osu!.exe process
+[2:47:22 PM] [OsuRTDataProviderPlugin][ID:0]Cannot find osu!.exe process
+[2:47:27 PM] [OsuRTDataProviderPlugin][ID:0]Cannot find osu!.exe process
+[2:47:33 PM] [OsuRTDataProviderPlugin][ID:0]Cannot find osu!.exe process
+[2:47:38 PM] [OsuRTDataProviderPlugin][ID:0]Cannot find osu!.exe process
+[2:47:44 PM] [OsuRTDataProviderPlugin][ID:0]Cannot find osu!.exe process
+[2:47:50 PM] [OsuRTDataProviderPlugin][ID:0]Cannot find osu!.exe process
+[2:47:55 PM] [OsuRTDataProviderPlugin][ID:0]Cannot find osu!.exe process
+[2:48:01 PM] [OsuRTDataProviderPlugin][ID:0]Cannot find osu!.exe process
+[2:48:07 PM] [OsuRTDataProviderPlugin][ID:0]Cannot find osu!.exe process
+[2:48:12 PM] [OsuRTDataProviderPlugin][ID:0]Cannot find osu!.exe process
+[2:48:18 PM] [OsuRTDataProviderPlugin][ID:0]Cannot find osu!.exe process
+[2:48:24 PM] [OsuRTDataProviderPlugin][ID:0]Cannot find osu!.exe process
+[2:48:29 PM] [OsuRTDataProviderPlugin][ID:0]Cannot find osu!.exe process
+[2:48:35 PM] [OsuRTDataProviderPlugin][ID:0]Cannot find osu!.exe process
+[2:48:40 PM] [OsuRTDataProviderPlugin][ID:0]Cannot find osu!.exe process
+[2:48:46 PM] [OsuRTDataProviderPlugin][ID:0]Cannot find osu!.exe process
+[2:48:52 PM] [OsuRTDataProviderPlugin][ID:0]Cannot find osu!.exe process
+[2:48:57 PM] [OsuRTDataProviderPlugin][ID:0]Cannot find osu!.exe process
+[2:49:03 PM] [OsuRTDataProviderPlugin]Exception: System.IO.FileNotFoundException: Could not find file 'C:\Users\siwat\AppData\Local\osu!\osu!.siwat.cfg'.
+File name: 'C:\Users\siwat\AppData\Local\osu!\osu!.siwat.cfg'
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share)
+   at OsuRTDataProvider.Listen.OsuListenerManager.FindSongPathAndUsername()
+[2:49:03 PM] [OsuRTDataProviderPlugin]Search failed, use default songs path.
+[2:49:03 PM] [OsuRTDataProviderPlugin]Osu Path: C:\Users\siwat\AppData\Local\osu!
+[2:49:03 PM] [OsuRTDataProviderPlugin]Beatmap Path: C:\Users\siwat\AppData\Local\osu!\Songs
+[2:49:03 PM] [OsuRTDataProviderPlugin][ID:0]Found osu!.exe process
+[2:49:03 PM] [OsuRTDataProviderPlugin][ID:0]Init StatusFinder Failed! Retry after 3 seconds
+[2:49:06 PM] [OsuRTDataProviderPlugin][ID:0]Init StatusFinder Failed! Retry after 3 seconds
+[2:49:10 PM] [OsuRTDataProviderPlugin][ID:0]Init StatusFinder Failed! Retry after 3 seconds
+[2:49:13 PM] [OsuRTDataProviderPlugin][ID:0]Init StatusFinder Failed! Retry after 3 seconds
+[2:49:16 PM] [OsuRTDataProviderPlugin][ID:0]Init StatusFinder Failed! Retry after 3 seconds
+[2:49:20 PM] [OsuRTDataProviderPlugin][ID:0]Init StatusFinder Failed! Retry after 3 seconds
+[2:49:25 PM] [OsuRTDataProviderPlugin]Exception: System.IO.FileNotFoundException: Could not find file 'C:\Users\siwat\AppData\Local\osu!\osu!.siwat.cfg'.
+File name: 'C:\Users\siwat\AppData\Local\osu!\osu!.siwat.cfg'
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share)
+   at OsuRTDataProvider.Listen.OsuListenerManager.FindSongPathAndUsername()
+[2:49:25 PM] [OsuRTDataProviderPlugin]Osu Path: C:\Users\siwat\AppData\Local\osu!
+[2:49:25 PM] [OsuRTDataProviderPlugin]Beatmap Path: C:\Users\siwat\AppData\Local\osu!\Songs
+[2:49:25 PM] [OsuRTDataProviderPlugin][ID:0]Found osu!.exe process
+[2:49:29 PM] [OsuRTDataProviderPlugin][ID:0]Init StatusFinder Success!
