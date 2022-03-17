@@ -1,3 +1,4 @@
+Model Credit
 buck converter - https://grabcad.com/library/lm2596-dc-to-dc-buck-converter-module-1
 arduino due - https://grabcad.com/library/arduino-due-1
 solenoid valves - https://grabcad.com/library/solenoid-valves-2-ways-2-positions-3-ways-2-positions-5-ways-2-positions-2
